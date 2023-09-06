@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            border: 2px solid blue;
+        }
+
+        #box-1 {
+            overflow: auto;
+
+        }
+
+        #box-2 {
+            overflow: auto;
+        }
+
+        .ellipsis {
+            width: 300px;
+            white-space: nowrap;
+            border: 2px solid steelblue;
+            overflow: hidden;
+            /* text-overflow: ellipsis; */
+            text-overflow: clip;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p title="read more" class="ellipsis">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque ipsum odit
+            sint?
+            Cumque
+            molestias accusamus
+            eveniet rem hic illum dicta.</p>
+    </header>
+    <section>
+        <div id="box-1" class="box">
+            <h3>Box No 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae earum officiis impedit aut quam
+                reiciendis corporis quo illo enim, dolor, sequi consequatur explicabo ab fugiat temporibus. Saepe
+                tenetur tempore ipsum maiores excepturi reprehenderit laudantium sequi sit consequatur dolor? Aut in
+                similique sapiente repudiandae, facere quibusdam reprehenderit! Saepe commodi eveniet quibusdam
+                accusantium minima eius laborum harum voluptatibus. Iure quia corporis ipsa aliquid inventore eum odio.
+                Amet quod quibusdam minus cumque ab. Quibusdam recusandae error vel, earum labore impedit, asperiores
+                sapiente sed, distinctio hic animi officiis unde voluptatum? Quas, esse assumenda? Nostrum possimus
+                atque ullam sit dolorum enim animi omnis maiores voluptatum!</p>
+        </div>
+        <div id="box-2" class="box">
+            <h3>Box No 2</h3>
+            <p>Repudiandae unde explicabo voluptas fugit porro, velit animi doloribus nesciunt aut at quis, commodi
+                magni nisi, rerum perferendis odio eius omnis cupiditate ea sed facilis consectetur numquam dolorum
+                corrupti. Facilis doloremque vitae numquam? Dolor alias quae nesciunt modi consequuntur obcaecati iusto
+                veniam tempore omnis! Ducimus nostrum voluptatibus quae repellendus nesciunt perspiciatis sunt
+                consequuntur ea iste totam quasi inventore id labore facilis, quia harum optio. Consectetur est maxime
+                placeat accusantium velit nobis consequuntur inventore quas architecto quod! Consequuntur quia
+                blanditiis omnis beatae assumenda neque autem ex natus laborum doloribus cum ut earum reiciendis quidem
+                quis amet, perferendis voluptatem magnam cumque quae.</p>
+        </div>
+    </section>
+</body>
+
+</html>

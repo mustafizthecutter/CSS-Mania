@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            border: 2px solid tomato;
+            /* transition: width 5s linear 3s, background-color 5s ease-in 3s; */
+            transition: transform 1s;
+        }
+
+        .box:hover {
+            /* width: 500px;
+            background-color: brown; */
+            transform: scale(1.5) rotate(45deg) translateX(150px);
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, voluptatibus natus! Suscipit voluptatum
+            voluptatibus, quidem repellat repudiandae vel quibusdam corporis dicta, aut expedita fugit quasi.</li>
+        <li>Dolorum ex quae voluptatum odit dolorem quam, rerum repellat magni facere! Saepe esse impedit voluptate,
+            distinctio, velit eaque minima exercitationem neque soluta ipsam iste eos?</li>
+        <li>Necessitatibus omnis explicabo dolor ipsam id corporis officiis veniam illo laudantium nobis a soluta,
+            recusandae minima voluptate nihil obcaecati error qui sint ipsum, quod ut!</li>
+    </ul>
+    <div class="box">Box-1</div>
+    <div class="box">Box-2</div>
+    <div class="box">Box-3</div>
+</body>
+
+</html>
