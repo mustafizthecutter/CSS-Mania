@@ -5,10 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
+    <section>
+        <h3 class="text-3xl">Exploring Flex layout in Tailwind</h3>
+        <div
+            class="flex flex-col md:flex-row lg:justify-between justify-center items-center h-96 border-2 border-orange-300 m-10">
+            <div class="bg-purple-400 h-24 w-24 border-4 border-blue-500 rotate-45 rounded-lg p-4 font-bold">box-1</div>
+            <div class="bg-purple-400 h-24 w-24 border-4 border-blue-500 rounded-lg p-4 font-bold">box-2</div>
+            <div class="bg-purple-400 h-24 w-24 border-4 border-blue-500 rounded-lg p-4 font-bold">box-3</div>
+            <div class="bg-purple-400 h-24 w-24 border-4 border-blue-500 rounded-lg p-4 font-bold">box-4</div>
 
+        </div>
+    </section>
 </body>
 
 </html>
